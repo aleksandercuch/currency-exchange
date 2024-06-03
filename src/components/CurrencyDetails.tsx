@@ -6,14 +6,16 @@ import { useParams } from 'react-router-dom';
 import { useRateHistory } from 'hooks/useRateHistory';
 
 // UI
-import { StyledLineChartOuterContainer, StyledLineChartInnerContainer } from 'styles/reusable/Charts';
+import { StyledLineChartOuterContainer, StyledLineChartInnerContainer } from 'styles/Charts';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 // UTILS
 import { handleColorChange } from 'utils/colorUtils';
 
-// MOCKS
-import { RetrunButton } from './reusable/ReturnButton';
+// COMPONENTS
+
+import { ReturnButton } from 'components/ReturnButton/ReturnButton';
+
 
 const CurrencyDetails: React.FC = () => {
   const { currency } = useParams<{ currency: string | undefined }>(); // Ensure currency is potentially undefined
@@ -38,7 +40,7 @@ const CurrencyDetails: React.FC = () => {
   
   return (
     <div>
-      <RetrunButton />
+      <ReturnButton />
       <StyledLineChartOuterContainer >
         <StyledLineChartInnerContainer>
           <ResponsiveContainer width="100%" height={300}>
