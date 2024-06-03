@@ -1,10 +1,15 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Currency echange project is a simple project written in React.js using antd library for UI, rechards library for charts and axios with tanstack to API.
+I had't had any experience with antd before this task but I decided to use Boombit tech stack anyway. Some of my comments started with "TODO" will describe you
+changes I would implement to the project if I had more time and better understanding of antd components. These are minor UI bugs but their fix is necessary for 
+best user experience.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install any required libraries.
 
 ### `npm start`
 
