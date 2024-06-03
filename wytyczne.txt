@@ -1,0 +1,10 @@
+1. Widoki
+a) widok z 10 walutami i ich wartościami USD ściągniętymi z API
+
+b) Widok odpowiedniej waluty po kliknięciu z historią ceny zaciągniętej z api (co najmniej 30 dni) 
+prezentowane na wykresie, gdzie na x mamy datę
+- powinienem móc cofnąć do poprzedniego widoku browserem i zrobionym przeze mnie guzikiem
+- mogę zmienić kolor linii wykresu,
+- zmiana koloru zapisuje się po odświeżeniu strony też
+
+- mobile friendly
