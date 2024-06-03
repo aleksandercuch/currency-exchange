@@ -4,11 +4,12 @@ import React from 'react';
 
 // UI
 import { Menu, MenuProps } from 'antd';
+import { MenuInfo } from 'rc-menu/es/interface';
 
 const MainNav: React.FC = () => {
     const [selectedKeys, setSelectedKeys] = React.useState<string[]>(["home"]);
     
-    const handleMenuClick = (e: any) => { // TODO: find proper type from andt but it shouldn't be "any" here.
+    const handleMenuClick = (e: MenuInfo) => {
         setSelectedKeys([e.key]);
     };
 

@@ -1,11 +1,13 @@
 // CORE
+import React from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 // UI
-import { StyledReturnButton } from 'styles/reusable/Buttons';
+import { StyledReturnButton } from './styles';
 import { IoReturnDownBack } from "react-icons/io5";
 
-export const RetrunButton = () => {
+export const ReturnButton = () => {
     const navigatge = useNavigate();
 
     const handleClick = () => {
