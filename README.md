@@ -1,5 +1,5 @@
-Currency echange project is a simple project written in React.js using antd library for UI, rechards library for charts and axios with tanstack to API.
-I had't had any experience with antd before this task but I decided to use Boombit tech stack anyway. Some of my comments started with "TODO" will describe you
+Currency exchange project is a simple project written in React.js using antd library for UI, rechards library for charts and axios with tanstack to API.
+I had't had any experience with antd before this task but I decided to use Boombit tech stack anyway. Some of my comments started with "TODO" describes
 changes I would implement to the project if I had more time and better understanding of antd components. These are minor UI bugs but their fix is necessary for 
 best user experience.
 
