@@ -13,9 +13,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContai
 import { handleColorChange } from 'utils/colorUtils';
 
 // COMPONENTS
-
 import { ReturnButton } from 'components/ReturnButton/ReturnButton';
-
 
 const CurrencyDetails: React.FC = () => {
   const { currency } = useParams<{ currency: string | undefined }>(); // Ensure currency is potentially undefined
@@ -36,7 +34,6 @@ const CurrencyDetails: React.FC = () => {
     if (/defaultProps/.test(args[0])) return;
     consoleError(...args);
   };
-
   
   return (
     <div>

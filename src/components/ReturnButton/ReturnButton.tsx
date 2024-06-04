@@ -8,11 +8,11 @@ import { StyledReturnButton } from './styles';
 import { IoReturnDownBack } from "react-icons/io5";
 
 export const ReturnButton = () => {
-    const navigatge = useNavigate();
+  const navigatge = useNavigate();
 
-    const handleClick = () => {
-        navigatge('/'); 
-      };
+  const handleClick = () => {
+     navigatge('/'); 
+  };
   return (
     <>
       <StyledReturnButton onClick={handleClick}><IoReturnDownBack /></StyledReturnButton>
