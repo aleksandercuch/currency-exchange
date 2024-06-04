@@ -2,7 +2,7 @@
 import React from 'react';
 
 // COMPONENTS
-import Settings from 'components/Settings';
+import Settings from 'components/Settings/Settings';
 
 const SettingsPage: React.FC = () => {
   return (

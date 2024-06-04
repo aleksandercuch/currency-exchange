@@ -6,7 +6,7 @@ import React from 'react';
 import { Menu, MenuProps } from 'antd';
 import { MenuInfo } from 'rc-menu/es/interface';
 
-const MainNav: React.FC = () => {
+const Navbar: React.FC = () => {
     const [selectedKeys, setSelectedKeys] = React.useState<string[]>(["home"]);
     
     const handleMenuClick = (e: MenuInfo) => {
@@ -36,5 +36,5 @@ const MainNav: React.FC = () => {
   );
 };
 
-export default MainNav;
+export default Navbar;
 

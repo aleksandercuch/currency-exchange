@@ -2,7 +2,7 @@
 import React from 'react';
 
 // UI
-import { StyledLabel } from './styles/Settings.styles';
+import { StyledLabel } from './Settings.styles';
 
 // UTILS
 import { handleColorChange } from 'utils/colorUtils';

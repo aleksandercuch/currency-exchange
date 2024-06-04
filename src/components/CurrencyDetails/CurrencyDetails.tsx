@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { useRateHistory } from 'hooks/useRateHistory';
 
 // UI
-import { StyledLineChartOuterContainer, StyledLineChartInnerContainer } from 'styles/Charts';
+import { StyledLineChartOuterContainer, StyledLineChartInnerContainer } from 'components/CurrencyDetails/CurrencyDetails.styles';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 // UTILS
@@ -47,6 +47,7 @@ const CurrencyDetails: React.FC = () => {
             <LineChart data={data}>
               <XAxis dataKey="date" />
               <YAxis dataKey="rate" />
+              {/* TODO: Tooltip should stay in single place on mobile version, do not place under currency point on chart */}
               <Tooltip />
               <CartesianGrid stroke="#f5f5f5" />
               <Line type="monotone" dataKey="rate" stroke={lineColor} />

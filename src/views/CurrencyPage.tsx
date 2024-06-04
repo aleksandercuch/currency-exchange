@@ -2,7 +2,7 @@
 import React from 'react';
 
 // COMPONENTS
-import CurrencyDetails from 'components/CurrencyDetails';
+import CurrencyDetails from 'components/CurrencyDetails/CurrencyDetails';
 
 const CurrencyPage: React.FC = () => {
   return (
