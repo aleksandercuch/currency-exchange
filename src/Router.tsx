@@ -7,13 +7,29 @@ import MainPage from './views/MainPage';
 import CurrencyPage from './views/CurrencyPage';
 import SettingsPage from './views/SettingsPage';
 
+// LAYOUT
+import Navbar from 'components/Navbar/Navbar';
+import { Layout } from 'antd';
+
+const { Header, Content, Footer } = Layout;
+
 const AppRouter: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/currency/:currency" element={<CurrencyPage />} />
-      <Route path="/settings" element={<SettingsPage />} />
-    </Routes>
+    <Router>
+      <Layout>
+        <Header>
+          <Navbar />
+          </Header>
+          <Content style={{ padding: '0 50px' }}>
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/currency/:currency" element={<CurrencyPage />} />
+              <Route path="/settings" element={<SettingsPage />} />
+            </Routes>
+          </Content>
+            <Footer style={{ textAlign: 'center' }}>Currency Exchange ©2024</Footer>
+      </Layout>
+    </Router>
   );
 };
 
